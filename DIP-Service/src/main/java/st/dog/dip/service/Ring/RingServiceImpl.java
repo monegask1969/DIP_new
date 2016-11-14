@@ -5,15 +5,10 @@
  */
 package st.dog.dip.service.Ring;
 
-import java.util.List;
-import st.dog.dip.domain.Ring.Ring;
-
 /**
  *
  * @author moneg
  */
-public interface RingService {
-    Ring getById(int id);
-    Ring getByDogShow(int dogshow_id);
-    List<Ring> getList();
+public class RingServiceImpl {
+    
 }

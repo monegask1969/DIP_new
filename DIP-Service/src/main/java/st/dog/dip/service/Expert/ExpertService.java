@@ -5,10 +5,19 @@
  */
 package st.dog.dip.service.Expert;
 
+import java.util.List;
+import st.dog.dip.domain.Expert.Expert;
+
 /**
  *
  * @author moneg
  */
-public class ExpertService {
-    
+public interface ExpertService {
+    Expert getById(int id);
+    Expert getByFname(String fname);
+    Expert getBySname(String sname);
+    Expert getByLname(String lname);
+    Expert getByCountry(String country);
+    Expert getByDescription(String description);
+    List<Expert> getList();
 }

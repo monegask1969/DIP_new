@@ -5,10 +5,19 @@
  */
 package st.dog.dip.service.Breeder;
 
+import java.util.List;
+import st.dog.dip.domain.Breeder.Breeder;
+import st.dog.dip.domain.Dog.Dog;
+
 /**
  *
  * @author moneg
  */
-public class BreederService {
-    
+public interface BreederService {
+    Breeder getById(int id);
+    Breeder getByFname(String fname);
+    Breeder getBySname(String sname);
+    Breeder getByLname(String lname);
+    Breeder getByDog(Dog dog);
+    List<Breeder> getList();
 }

@@ -5,10 +5,18 @@
  */
 package st.dog.dip.service.Participant;
 
+import java.util.List;
+import st.dog.dip.domain.Participant.Participant;
+
 /**
  *
  * @author moneg
  */
-public class ParticipantService {
-    
+public interface ParticipantService {
+    Participant getById(int id);
+    Participant getByFname(String fname);
+    Participant getBySname(String sname);
+    Participant getByLname(String lname);
+    Participant getByAge(int age);
+    List<Participant> getList();
 }

@@ -5,10 +5,18 @@
  */
 package st.dog.dip.service.Owner;
 
+import java.util.List;
+import st.dog.dip.domain.Owner.Owner;
+
 /**
  *
  * @author moneg
  */
-public class OwnerService {
-    
+public interface OwnerService {
+    Owner getById(int id);
+    Owner getByFname(String fname);
+    Owner getBySname(String sname);
+    Owner getByLname(String lname);
+    Owner getByLocation(String location);
+    List<Owner> getList();
 }
